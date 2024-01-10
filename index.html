@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco's Kitchen Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav navbar">
+            <div class="container">
+                <div class="nav-logo-and-score navbar-brand">
+                    <img src="images/logo.svg" alt="Студия кухни МАРКО" class="logo">
+                    <a href="#"><img src="images/yandex-maps.png" alt="Янедкс Карты" class="yandex-maps"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-links collapse navbar-collapse" id="navbarSupportedContent"> 
+                    <div class="address os-14 nav-item">
+                        <p class="fw-700">Производство кухонь на заказ</p>
+                        <p class="fw-400">Анапа, ул. Крылова, д. 27</p>
+                    </div>
+                    <div class="social nav-item">
+                        <a href="#">
+                            <!-- <img src="images/whatsapp.svg" alt="whatsapp" class="soc-img"> -->
+                            <svg class="soc-img" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <g id="telegram" clip-path="url(#clip0_0_703)">
+                                <g id="Artboard">
+                                <path id="Oval" d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36Z" />
+                                <path class="soc-img-icon" id="Path-3" fill-rule="evenodd" clip-rule="evenodd" d="M8.14853 17.8099C13.3959 15.5237 16.895 14.0165 18.6457 13.2884C23.6445 11.2092 24.6832 10.848 25.3602 10.8361C25.5091 10.8335 25.842 10.8704 26.0577 11.0454C26.3776 11.305 26.3794 11.8685 26.3439 12.2414C26.073 15.0876 24.9009 21.9947 24.3046 25.1825C24.0522 26.5314 23.5554 26.9837 23.0745 27.0279C22.0292 27.1241 21.2354 26.3371 20.223 25.6735C18.6388 24.635 17.7438 23.9885 16.206 22.9752C14.4288 21.804 15.5809 21.1604 16.5937 20.1085C16.8588 19.8332 21.4643 15.644 21.5535 15.264C21.5646 15.2165 21.575 15.0393 21.4697 14.9458C21.3645 14.8522 21.2091 14.8842 21.0971 14.9096C20.9382 14.9457 18.4073 16.6185 13.5046 19.928C12.7862 20.4213 12.1355 20.6616 11.5526 20.649C10.9098 20.6352 9.67361 20.2856 8.75455 19.9869C7.6273 19.6205 6.73138 19.4267 6.80943 18.8044C6.85007 18.4802 7.29641 18.1488 8.14853 17.8099Z"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_0_703">
+                                <rect width="36" height="36" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </a>
+                        <a href="#">
+                            <!-- <img src="images/telegram.svg" alt="telegram" class="soc-img"> -->
+                            <svg class="soc-img" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                                <g id="whatsapp" clip-path="url(#clip0_0_711)">
+                                <path id="Vector" d="M18.0045 0H17.9955C8.07075 0 0 8.073 0 18C0 21.9375 1.269 25.587 3.42675 28.5503L1.1835 35.2373L8.10225 33.0255C10.9485 34.911 14.3438 36 18.0045 36C27.9292 36 36 27.9247 36 18C36 8.07525 27.9292 0 18.0045 0Z" />
+                                <path class="soc-img-icon" id="Vector_2" d="M28.4782 25.4184C28.044 26.6447 26.3205 27.6617 24.9457 27.9587C24.0052 28.1589 22.7767 28.3187 18.6412 26.6042C13.3515 24.4127 9.94499 19.0374 9.67949 18.6887C9.42524 18.3399 7.54199 15.8424 7.54199 13.2594C7.54199 10.6764 8.85374 9.41866 9.38249 8.87866C9.81674 8.43541 10.5345 8.23291 11.223 8.23291C11.4457 8.23291 11.646 8.24416 11.826 8.25316C12.3547 8.27566 12.6202 8.30716 12.969 9.14191C13.4032 10.1882 14.4607 12.7712 14.5867 13.0367C14.715 13.3022 14.8432 13.6622 14.6632 14.0109C14.4945 14.3709 14.346 14.5307 14.0805 14.8367C13.815 15.1427 13.563 15.3767 13.2975 15.7052C13.0545 15.9909 12.78 16.2969 13.086 16.8257C13.392 17.3432 14.4495 19.0689 16.0065 20.4549C18.0157 22.2437 19.6447 22.8152 20.2275 23.0582C20.6617 23.2382 21.1792 23.1954 21.4965 22.8579C21.8992 22.4237 22.3965 21.7037 22.9027 20.9949C23.2627 20.4864 23.7172 20.4234 24.1942 20.6034C24.6802 20.7722 27.252 22.0434 27.7807 22.3067C28.3095 22.5722 28.6582 22.6982 28.7865 22.9209C28.9125 23.1437 28.9125 24.1899 28.4782 25.4184Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_0_711">
+                                <rect width="36" height="36" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </a>
+                    </div>
+                    <a href="tel:+79883117788" class="os-24 phone nav-item">+7 (988)-311-77-88</a>
+                    <button class="btn requst-call nav-item">
+                        <svg class="reques-call-img" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Ellipse 69" filter="url(#filter0_d_5_312)">
+                            <circle cx="9" cy="9" r="3" />
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_5_312" x="0.3" y="0.3" width="17.4" height="17.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="2.85"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.984314 0 0 0 0 0.964706 0 0 0 0 0.937255 0 0 0 1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_312"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_312" result="shape"/>
+                            </filter>
+                            </defs>
+                        </svg>                                        
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section class="description">
+            <div class="container">
+                <h1 class="lora-big">Изготовим роскошную дизайнерскую кухню 
+                </h1>
+                <div class="subtitle os-24">
+                    <img src="images/wallet.svg" alt="Низкая цена" class="wallet-img">
+                    <div>
+                        <p class="fw-700">Цена на 12-24% ниже,</p>
+                        <p class="fw-400">чем у посредников</p>
+                    </div>
+                </div>
+                <div class="header-descr">
+                    <div class="description-text first-description-text os-18 wow animate__animated animated animate__fadeInRightBig">
+                        <p>Огромный выбор</p>
+                        <p>бытовой техники</p>
+                    </div>
+                    <div class="description-text second-description-text os-18 wow animate__animated animate__fadeInRightBig">
+                        <p>Изысканный гарнитур</p>
+                        <p>любого размера</p>
+                    </div>
+                    <div class="description-text third-description-text os-18 wow animate__animated animate__fadeInRightBig">
+                        <p>Выдающиеся</p>
+                        <p>сорта древесины</p>
+                    </div>
+                </div>
+                <div class="calculation">
+                    <p class="calculation-txt">Рассчитаем стоимость кухни-мечты</p>
+                </div>
+                <div class="request-calculation wow animate__animated animate__slideInDown">
+                    <button class="btn ">Заказать расчёт</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <img src="images/advantage-kitchen.png" alt="" class="advantage-background wow animate__animated animate__fadeInLeft">
+        <section class="advantage">
+            <div class="container">
+                <div class="lora-medium wow animate__animated animate__fadeInRight">
+                    <h2 class="advantage-title">Наши преимущества</h2>
+                </div>
+                <div class="advantages-items wow animate__animated animate__fadeInUp">
+                    <div class="advantage-item">
+                        <img src="images/kitchen-icon.svg" alt="Кухни" class="advantage-item__img">
+                        <div class="advantage-text">
+                            <p class="os-24 fw-700">C 2000&nbsp;г на рынке</p>
+                            <p class="os-24 fw-400">наши кухни выбрали 10&nbsp;000+ семей</p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="images/time-icon.svg" alt="Сжатые сроки" class="advantage-item__img">
+                        <div class="advantage-text">
+                            <p class="os-24 fw-700">Сжатые сроки</p>
+                            <p class="os-24 fw-400">изготовление кухни от 20 дней </p>
+                        </div>
+                    </div>
+                    <div class="advantage-item">
+                        <img src="images/design-icon.svg" alt="Дизайн проект " class="advantage-item__img">
+                        <div class="advantage-text">
+                            <p class="os-24 fw-700">Дизайн проект </p>
+                            <p class="os-24 fw-400">бесплатно за 30 минут</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-works">
+            <div class="container">
+                <div class="lora-medium wow animate__animated animate__fadeInLeft">
+                    <h2 class="our-works-title">Посмотрите наши работы</h2>
+                </div>
+                <div class="works-btns">
+                    <div class="filter-btns">
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                пЛАНИРОВКА 
+                                <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9">
+                                    <path d="M10.5 8.5L0.540707 0.249998L20.4593 0.25L10.5 8.5Z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="100">Прямые</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="134">Угловые</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="250">С островом</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="120">Трёхъярусные</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="170">П-образные</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                Стили кухни 
+                                <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9">
+                                    <path d="M10.5 8.5L0.540707 0.249998L20.4593 0.25L10.5 8.5Z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="100">Прямые</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="134">Угловые</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="250">С островом</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="120">Трёхъярусные</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="170">П-образные</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-btn">
+                                Цвет
+                                <svg class="dropdown-arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="9" viewBox="0 0 21 9">
+                                    <path d="M10.5 8.5L0.540707 0.249998L20.4593 0.25L10.5 8.5Z" />
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="100">Белые</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="134">Синие</p>
+                                </li>
+                                <li class="dropdown-menu__item">
+                                    <input type="checkbox" class="checkbox">
+                                    <p class="os-16 fw-400 dropdown-menu__item-text" data-amount="250">Коричневые</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="confirm-btns">
+                        <button class="btn apply">применить</button>
+                        <button class="btn reset">сбросить</button>
+                    </div>
+                </div>
+                <div class="works-cards">
+                    <div class="works-card">
+                        <div class="work-images">
+                            <img src="images/cards/card.png" alt="" class="work-main-img">
+                            <div class="carousel-container">
+                                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/advantage-kitchen.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="slider-score">
+                                        <p class="current-slide">01</p>
+                                        <p class="total-slide"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-header">
+                                <h4 class="lora-small">Кухня 097 минимализм</h4>
+                                <p class="os-16 fw-400">Угловая белая кухня со столешницей под бетон.</p>
+                            </div>
+                            <div class="work-body">
+                                <table class="table">
+                                    <thead class="thead">
+                                        <tr class="os-16 fw-700 thead__inner">
+                                            <th>Эконом</th>
+                                            <th>Стандарт</th>
+                                            <th>Премиум</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="os-16 fw-400 tbody__inner">
+                                            <td>168 000 р.</td>
+                                            <td>217 000 р.</td>
+                                            <td>270 000 р.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="os-16">
+                                    <p class="fw-700">Длина кухни: <span class="fw-400">4900 мм</span></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="work-footer">
+                                <button class="def-btn invert-btn">Подробнее</button>
+                                <button class="def-btn orang-btn">Расчет стоимости</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works-card">
+                        <div class="work-images">
+                            <img src="images/cards/card.png" alt="" class="work-main-img">
+                            <div class="carousel-container">
+                                <div id="SecondSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/advantage-kitchen.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#SecondSlider" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#SecondSlider" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="slider-score">
+                                        <p class="current-slide">01</p>
+                                        <p class="total-slide"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-header">
+                                <h4 class="lora-small">Кухня 097 минимализм</h4>
+                                <p class="os-16 fw-400">Угловая белая кухня со столешницей под бетон.</p>
+                            </div>
+                            <div class="work-body">
+                                <table class="table">
+                                    <thead class="thead">
+                                        <tr class="os-16 fw-700 thead__inner">
+                                            <th>Эконом</th>
+                                            <th>Стандарт</th>
+                                            <th>Премиум</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="os-16 fw-400 tbody__inner">
+                                            <td>168 000 р.</td>
+                                            <td>217 000 р.</td>
+                                            <td>270 000 р.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="os-16">
+                                    <p class="fw-700">Длина кухни: <span class="fw-400">4900 мм</span></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="work-footer">
+                                <button class="def-btn invert-btn">Подробнее</button>
+                                <button class="def-btn orang-btn">Расчет стоимости</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works-card">
+                        <div class="work-images">
+                            <img src="images/cards/card.png" alt="" class="work-main-img">
+                            <div class="carousel-container">
+                                <div id="ThirdSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/advantage-kitchen.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#ThirdSlider" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#ThirdSlider" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="slider-score">
+                                        <p class="current-slide">01</p>
+                                        <p class="total-slide"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-header">
+                                <h4 class="lora-small">Кухня 097 минимализм</h4>
+                                <p class="os-16 fw-400">Угловая белая кухня со столешницей под бетон.</p>
+                            </div>
+                            <div class="work-body">
+                                <table class="table">
+                                    <thead class="thead">
+                                        <tr class="os-16 fw-700 thead__inner">
+                                            <th>Эконом</th>
+                                            <th>Стандарт</th>
+                                            <th>Премиум</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="os-16 fw-400 tbody__inner">
+                                            <td>168 000 р.</td>
+                                            <td>217 000 р.</td>
+                                            <td>270 000 р.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="os-16">
+                                    <p class="fw-700">Длина кухни: <span class="fw-400">4900 мм</span></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="work-footer">
+                                <button class="def-btn invert-btn">Подробнее</button>
+                                <button class="def-btn orang-btn">Расчет стоимости</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works-card">
+                        <div class="work-images">
+                            <img src="images/cards/card.png" alt="" class="work-main-img">
+                            <div class="carousel-container">
+                                <div id="FourthSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/advantage-kitchen.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-card col-md-4">
+                                                <div class="card-body">
+                                                    <img src="images/cards/card.png" class="card-image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#FourthSlider" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#FourthSlider" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                    <div class="slider-score">
+                                        <p class="current-slide">01</p>
+                                        <p class="total-slide"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-description">
+                            <div class="work-header">
+                                <h4 class="lora-small">Кухня 097 минимализм</h4>
+                                <p class="os-16 fw-400">Угловая белая кухня со столешницей под бетон.</p>
+                            </div>
+                            <div class="work-body">
+                                <table class="table">
+                                    <thead class="thead">
+                                        <tr class="os-16 fw-700 thead__inner">
+                                            <th>Эконом</th>
+                                            <th>Стандарт</th>
+                                            <th>Премиум</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tbody">
+                                        <tr class="os-16 fw-400 tbody__inner">
+                                            <td>168 000 р.</td>
+                                            <td>217 000 р.</td>
+                                            <td>270 000 р.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="os-16">
+                                    <p class="fw-700">Длина кухни: <span class="fw-400">4900 мм</span></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="work-footer">
+                                <button class="def-btn invert-btn">Подробнее</button>
+                                <button class="def-btn orang-btn">Расчет стоимости</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="libs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
