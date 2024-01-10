@@ -88,45 +88,6 @@ items.forEach((e) => {
     }
 })
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var carousel = document.querySelectorAll('carouselExcampleControls');
-//     var workMainImg = document.querySelector('.work-main-img');
-//     var totalSlide = document.querySelector('.total-slide');
-//     var currentSlide = document.querySelector('.current-slide');
-
-//     // Update total slide count
-//     totalSlide.textContent = formatSlideNumber(carousel.querySelectorAll('.carousel-item').length);
-
-//     // Listen to the 'slid.bs.carousel' event to update the current slide
-//     carousel.addEventListener('slid.bs.carousel', function () {
-//         var activeSlideIndex = Array.from(carousel.querySelectorAll('.carousel-item')).indexOf(carousel.querySelector('.carousel-item.active')) + 1;
-//         currentSlide.textContent = formatSlideNumber(activeSlideIndex);
-
-//         // Update work-main-img src
-//         var activeItem = document.querySelector('.carousel-item.active img');
-//         if (activeItem) {
-//             workMainImg.src = activeItem.src;
-//         }
-//     });
-
-//     function formatSlideNumber(number) {
-//         // Format the slide number with leading zeros
-//         return number < 10 ? '0' + number : number.toString();
-//     }
-
-//     // Initial update
-//     updateSlideInfo();
-
-//     function updateSlideInfo() {
-//         var activeIndex = getActiveIndex(carousel);
-//         currentSlide.textContent = formatSlideNumber(activeIndex + 1);
-//     }
-
-//     function getActiveIndex(carousel) {
-//         return Array.from(carousel.querySelectorAll('.carousel-item')).indexOf(carousel.querySelector('.carousel-item.active'));
-//     }
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
     // Получаем все элементы с классом carousel
     var carousels = document.querySelectorAll('.carousel');
